@@ -20,7 +20,8 @@
             exchange.price AS price, 
             exchange.vol_price AS vol, 
             currencies.usd_ask AS ask, 
-            currencies.usd_bid AS bid
+            currencies.usd_bid AS bid,
+            exchange.raise AS is_raise
           FROM exchange
           LEFT JOIN currencies ON (exchange.currency = currencies.id)";
 

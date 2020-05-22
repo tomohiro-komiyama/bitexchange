@@ -1,6 +1,5 @@
 <?php 
-  $api_base = "https://local.bitmahavi.com/api/htdocs";
-  $public_api_base = "https://local.bitmahavi.com/frontend/htdocs";
+  $api_base = "https://local.bitmahavi.com/auth/htdocs";
 ?>
 
 <!DOCTYPE html>
@@ -11,12 +10,12 @@
 </head>
 <body>
 
-<form class="row" action="<?= "$api_base/get_user_balance.php" ?>" style="padding-top: 50px;">
+<form class="row" action="<?= "$api_base/login.php" ?>" style="padding-top: 50px;">
 
   <div class="col-sm-12 text-center">
     <h4>
       <strong>URL: </strong>
-      <?= "$api_base/get_user_balance.php" ?>
+      <?= "$api_base/login.php" ?>
     </h4>
     <br>
     <br>
@@ -24,12 +23,12 @@
 
   <div class="col-sm-offset-3 col-sm-6">
     <div class="form-group ">
-      <label>session_id</label>
-      <input type="text" name="session_id" class="form-control" value="87">
+      <label>user</label>
+      <input type="text" name="user" class="form-control" value="supyc@getnada.com">
     </div>
     <div class="form-group ">
-      <label>nonce</label>
-      <input type="text" name="nonce" class="form-control" value="76785" />
+      <label>pass</label>
+      <input type="text" name="pass" class="form-control" value="vGTMk3OZAIRo">
     </div>
     <button class="btn btn-primary">Submit</button>
   </div>
